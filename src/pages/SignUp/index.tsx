@@ -47,7 +47,11 @@ const SignUn: React.FC = () => {
               <Title>Crie sua conta</Title>
             </View>
 
-            <Form ref={formRef} onSubmit={(data) => { console.log(data) }}>
+            <Form
+              style={{ width: "100%" }}
+              ref={formRef}
+              onSubmit={(data) => { console.log(data) }}
+            >
               <Input
                 autoCapitalize="words"
                 name="name"
