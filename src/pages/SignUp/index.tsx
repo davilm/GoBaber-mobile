@@ -82,7 +82,7 @@ const SignUn: React.FC = () => {
         );
       }
     },
-    [],
+    [navigation],
   );
 
   return (
