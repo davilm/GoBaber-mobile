@@ -1,5 +1,8 @@
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import { Platform } from 'react-native';
+import { FlatList } from 'react-native';
+import { Provider } from './index';
 
 export const Container = styled.View`
   flex: 1;
@@ -7,7 +10,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   padding: 24px;
-  padding-top: ${getStatusBarHeight() + 24}px;
+  padding-top: ${Platform.OS === 'ios' ? getStatusBarHeight() + 24 : 24}px;
   background: #28262e;
 
   flex-direction: row;
@@ -33,3 +36,5 @@ export const UserAvatar = styled.Image`
   height: 56px;
   border-radius: 28px;
 `;
+
+export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)``;
