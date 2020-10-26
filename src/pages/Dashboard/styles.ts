@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
-import { Platform } from 'react-native';
-import { FlatList } from 'react-native';
+import { Platform, FlatList } from 'react-native';
 import { Provider } from './index';
 import { RectButton } from 'react-native-gesture-handler';
 
